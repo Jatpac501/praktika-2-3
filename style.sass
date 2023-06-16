@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap')
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+section, header, footer
+    width: 100%
+h1, h2, h3, h4, h5, h6, p
+  padding: 0
+  margin: 0
+
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  font-family: 'Montserrat', sans-serif
+
+ul, li, ol
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+button, input
+  font-family: 'Montserrat', sans-serif
+
+path
+  transition: .2s linear
+
+a
+  text-decoration: none
+  color: #212121
+  transition: .2s linear
+
+.ml1
+  margin-left: 1rem
+
+.medium
+  font-weight: 500
+
+.bold
+  font-weight: 700
+
+.button
+  border: none
+  transition: .2s linear
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  background: #D7B399
+  color: #fff
+  font-size: 1.6rem
+  line-height: 19.5px
+  padding: 1.7rem 3rem
+  cursor: pointer
+  border: 1px solid #D7B399
+
+  &:hover
+    color: #d7b399
+    background: #fff
+
+    svg path
+      fill: #d7b399
+
+.container
+  width: 100%
+  max-width: 1110px
+  margin: 0 auto
+
+.header
+    top: 50px
+    position: fixed
+.header__container
+    margin: auto
+    width: 1110px
+    display: flex
+    align-items: center
+    justify-content: space-between
+.header__collections, .header__cart, .header__funcs, .header__link
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 35px
+.header__cart
+    gap: 15px
+.header__link
+    gap: 5px
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.03em
+.header__cart-count
+    padding-left: 10px
+    width: 45.75px
+    height: 17px
+    background-image: url("assets/Frame 3.svg")
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    letter-spacing: 0.03em
+    color: #FFFFFF
+.main
+    background: #F9F6F1
+.main__container
+    padding-top: 216px
+    margin: auto
+    width: 1110px
+    display: grid
+    grid-auto-columns: 1fr
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "body image" "slider slider"
+    .main__body
+        grid-area: body
+        margin-bottom: 130px
+        .main__title
+            font-weight: 400
+            font-size: 30px
+            line-height: 37px
+            letter-spacing: 0.02em
+            margin-bottom: 35px
+        .main__text
+            font-weight: 700
+            font-size: 55px
+            line-height: 67px
+            letter-spacing: 0.04em
+            margin-bottom: 55px
+        .main__btn
+            width: 240px
+            height: 55px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #fff
+            background: #D7B399
+    .main__card
+        position: relative
+        grid-area: image
+        margin-bottom: 130px
+        .main__price
+            position: absolute
+            right: 0
+            .main__price-old
+                font-weight: 700
+                font-size: 24px
+                line-height: 29px
+                text-align: right
+                letter-spacing: 0.05em
+                text-decoration-line: line-through
+                text-transform: uppercase
+                color: #000000
+                margin-bottom: 14px
+            .main__price-new
+                font-weight: 700
+                font-size: 42px
+                line-height: 51px
+                text-align: right
+                letter-spacing: 0.02em
+                text-transform: uppercase
+                color: #D84033
+    .main__slider
+        grid-area: slider
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        gap: 15px
+        margin-bottom: 70px
+        .main__slider-btn
+            width: 40px
+            height: 7px
+            background: #CECECE
+        .main__slider-btn-active
+            background: #D7B399
+.deliver
+    background: #212121
+    color: #fff
+.deliver__container
+    padding: 75px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 23px
+    .deliver__title
+        display: flex
+        gap: 0.3em
+        font-size: 30px
+        line-height: 37px
+        text-align: center
+        letter-spacing: 0.02em
+        .deliver__title-text
+            font-weight: 700
+    .deliver__body
+        font-weight: 300
+        font-size: 21px
+        line-height: 26px
+        text-align: center
+.cols
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+.cols__container
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    width: calc(100vw/2)
+    height: 250px
+    background: #F9F6F1
+    &:last-child
+        background: #F4F4F4
+        justify-content: flex-start
+    .cols__card
+        display: flex
+        align-items: center
+        justify-content: end
+        width: calc(1100px/2)
+        display: flex
+        .cols__body
+            .cols__title
+                font-weight: 500
+                font-size: 24px
+                line-height: 29px
+                letter-spacing: 0.03em
+                margin-bottom: 25px
+            .cols__text
+                font-weight: 300
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 40px
+            .cols__btn
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 80px
+                height: 30px
+                background: #D7B399
+        .cols__image
+            align-self: flex-end
+.menu__container
+    position: relative
+    width: 1100px
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    .menu__card
+        width: calc(1110px/4)
+        height: 236px
+        position: relative
+        .menu__image
+            top: 0
+            position: absolute
+            z-index: -1
+        .menu__name
+            bottom: 25px
+            left: 30px 
+            position: absolute
+            font-weight: 300
+            font-size: 21px
+            line-height: 26px
+            letter-spacing: 0.03em
+.footer
+  display: flex
+  flex-direction: column
+  width: 100%
+.footer__content
+  width: 100%
+  background: #212121
+  padding: 7.3rem 0rem 8rem 0
+.footer__copyright
+  padding: 3rem 0
+  background: #fff
+.footer__content--inner
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+.footer__copyright--inner
+  display: flex
+  align-items: center
+  justify-content: space-between
+.footer__copyright--text
+  color: #212121
+  line-height: 22px
+.footer__logo--inner
+  width: 201px
+  height: auto
+  display: flex
+.footer__logo
+  width: 100%
+  height: auto
+.footer__nav--inner
+  width: 100%
+  display: flex
+  align-items: flex-start
+  max-width: 700px
+.footer__nav--item
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 25%
+  padding-right: 2rem
+
+  &:last-child
+    padding-right: 0
+.footer__nav--item--title
+  text-transform: uppercase
+  color: #fff
+  font-size: 1rem
+  line-height: 12px
+  font-weight: 700
+.footer__nav--content
+  margin-top: 2rem
+
+  li
+    margin-top: 1rem
+
+    &:first-child
+      margin-top: 0
+
+    a
+      color: #cbcfd4
+      font-size: 1.4rem
+      line-height: 22px
+
+      &:hover
+        color: #fff
+.footer__social--inner
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-top: 2rem
+.footer__social--link
+  display: flex
+  align-items: center
+  margin-top: 1rem
+  color: #fff
+  font-size: 1.4rem
+  line-height: 22px
+
+  &:hover
+    opacity: 0.6
+
+  &:first-child
+    margin-top: 0
+.footer__social--icon
+  margin-right: 0.8rem
+  width: 24px
+  height: 24px
+.new__container
+    width: 1110px
+    margin: 150px auto
+    .new__title
+        text-align: center
+        font-weight: 700
+        font-size: 36px
+        line-height: 44px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #212121
+        margin-bottom: 100px
+    .new__box
+        display: flex
+        gap: 30px
+        margin-bottom: 100px
+        .new__card
+            flex-direction: column
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            border: 3px solid #D7B399
+            padding: 22px
+            .new__image9
+                margin-bottom: 25px
+            .new__name
+                width: 112px
+                font-weight: 600
+                font-size: 14px
+                line-height: 17px
+                text-align: center
+                margin-bottom: 15px
+            .new__price
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #D7B399
+    .new__btn
+        margin: auto
+        color: #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 220px
+        height: 55px
+        background: #D7B399
+        gap: 3px
+
